@@ -6,7 +6,7 @@ const app = express();
 app.use(json()); 
 app.use(cors());
 
-// Configura la conexión a MySQL usando variables de entorno
+
 const db = createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -16,12 +16,15 @@ const db = createConnection({
 });
 
 db.connect((err) => {
-  if (err) throw err;
-  console.log('Conectado a MySQL');
+  if (err) {
+    console.error('Error conectando a MySQL:', err);
+    process.exit(1); 
+  } else {
+    console.log('Conectado a MySQL');
+  }
 });
 
 
-// Inicia el servidor
 const PORT = process.env.SERVER_PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
