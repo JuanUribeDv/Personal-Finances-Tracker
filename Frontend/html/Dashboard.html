@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal finances</title>
+    <link rel="stylesheet" href="/Frontend/css/styles.css">
+    <link rel="stylesheet" href="/Frontend/css/Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/locales/es.global.min.js'></script>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>J.P Finances</h2>
+        <hr>
+        <ul>
+            <li><a href="/Frontend/html/Dashboard.html">Dashboard</a></li>
+            <li><a href="/Frontend/html/My_debts.html">My debts</a></li>
+            <li><a href="/Frontend/html/Debtors.html">Debtors</a></li>
+            <li><a href="/Frontend/html/Savings.html">Savings</a></li>
+            <li><a href="/Frontend/html/Projects.html">Projects</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="header">
+            <h2>Dashboard</h2>
+            <button><i class="fas fa-bell"></i></button>
+        </div>
+        <h3>Welcome back to your personal finances tracker</h5>
+        <hr>
+        <div class="sections">
+            <div id="finance-sectionI">
+                <h3>Incomes</h3>
+                <p id="income"></p>
+                <button id="incomeBtn">Change income</button>
+            </div>
+            <div id="finance-sectionE">
+                <h3>Expenses</h3>
+                <p id="expenses"></p>
+                <button id="expenBtn">Change expenses</button>
+            </div>
+        </div>
+        <div id="calendarside">
+            <div id="calendar"></div>
+        </div>    
+    </div>
+    <script src="/Frontend/js/Dashboard.js"></script>
+</body>
+</html>
