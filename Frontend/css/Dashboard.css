@@ -1,0 +1,46 @@
+/* Estilos específicos para Dashboard.html */
+
+#main button {
+    background-color: #22C55E;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sections {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#finance-sectionI {
+    flex: 1;
+    background-color: #252424;
+    padding: 12px;
+    border-radius: 8px;
+    color: #ffffff;
+    align-items: center;
+}
+#finance-sectionE {
+    flex: 1;
+    background-color: #252424;
+    padding: 12px;
+    border-radius: 8px;
+    color: #ffffff;
+    align-items: center;
+}
+#calendarside{
+    height: 80vh; 
+    text-align: center;
+    margin-top: 15%;
+
+}
