@@ -29,27 +29,36 @@ Herramientas: Git, VS Code
    ```
    git clone https://github.com/JuanUribeDv/Personal-Finances-Tracker.git
    ```
--- 
+
+---
+
 2. Navega a la carpeta del backend:
    ```
    cd Backend
    ```
--- 
+
+--- 
+
 3. Instala las dependencias del backend:
    ```
    npm install
    ```
---
+
+---
+
 4. Crea un archivo `.env` basado en `.env.example`:
    ```
    cp .env.example .env
    ```
    Edita el archivo `.env` con tus configuraciones de base de datos MySQL, con base en el archivo de .env.example
---
+
+---
+
 5. Inicia el servidor backend:
    ```
    node server.js
    ```
---
+---
+
 6. Abre el frontend en tu navegador:
    - Navega a la carpeta `Frontend` y abre los archivos HTML directamente en el navegador usando Live Server
